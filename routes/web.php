@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontendController@index')->name('frontend.index');
+Route::get('/page-info', 'FrontendController@pageInfo')->name('frontend.page.info');
+Route::get('/page-shop', 'FrontendController@pageShop')->name('frontend.page.shop');
