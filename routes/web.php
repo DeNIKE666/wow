@@ -15,6 +15,15 @@ Route::get('/', 'FrontendController@index')->name('frontend.index');
 Route::get('/info', 'FrontendController@pageInfo')->name('frontend.page.info');
 Route::get('/shop', 'FrontendController@pageShop')->name('frontend.page.shop');
 
-Route::prefix('admin')->group(function () {
-    Route::get('/' , 'Admin\AdminController@index')->name('admin');
+Route::prefix('admin')->namespace('Admin')->group(function () {
+    Route::get('/' , 'AdminController@index')->name('admin');
+
+    Route::prefix('categories')->group(function () {
+        Route::get('/', 'CategoryController@index')->name('categories');
+        Route::post('/create', 'CategoryController@create')->name('categorory.create');
+        Route::post('/subCategory/{category}', 'CategoryController@show')->name('categorory.subcategory');
+        Route::get('/show/{category}', 'CategoryController@show')->name('categorory.show');
+        Route::get('/edit/{category}', 'CategoryController@edit')->name('categorory.edit');
+        Route::post('/update/{category}', 'CategoryController@update')->name('categorory.update');
+    });
 });

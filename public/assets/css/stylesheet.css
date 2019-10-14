@@ -94,3 +94,8 @@
     font-style: normal;
 }
 
+.pageshopm-item > a > span:after {
+    content: '';
+    width: 10px;
+    word-break: break-word;
+}

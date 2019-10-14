@@ -1,35 +1,66 @@
 @extends('layouts.admin')
 
-@section('breadcrumbs', Breadcrumbs::render('categories.edit', $category))
-
-@section('title', 'Редактирование категории')
-
 @section('content')
-    <div class="page-inner mt--2">
-        <div class="card">
-            <div class="card-body">
-                <form action="{{ route('categories.update', $category) }}" method="post">
+    <div class="card">
+        <div class="card-body">
+            <form action="{{ route('categorory.update', $category) }}" method="POST">
+                @CSRF
+                <div class="form-group">
+                    <label for="category_name">Название</label>
+                    <input id="category_name" name="name" class="form-control" value="{{ $category->name ?? old('name') }}">
+                </div>
 
-                    @method('PUT')
+                <div class="form-group">
+                    <label for="description">Описание</label>
+                    <textarea id="category_name" name="description" class="form-control"  rows="3">{{ $category->description ?? old('description') }}</textarea>
+                    <br>
+                    <label for="popup">Позиция всплывающего текста</label>
+                    <select name="class" class="form-control" id="image">
+                        @foreach (position() as $k => $position)
+                            <option
+                                @if ($category->class == $k)
+                                selected
+                                @endif
+                                value="{{ $k }}">{{ $position }}</option>
+                        @endforeach
+                    </select>
+                    <br>
+                    <p>Очень важно, каждый новый ряд по 3 блока должен начинаться с новой позиции (<b>top-line-1, top-line-2, top-line-3</b>) </p>
+                </div>
 
-                    <div class="form-group">
-                        <label for="category_title">Название категории</label>
-                        <input type="text" class="form-control" id="category_title" name="title" value="{{ $category->title }}">
-                    </div>
+                <div class="form-group">
+                    <label for="image">Изображение</label>
+                    <select name="image" class="form-control" id="image">
+                        <option selected value="">Выберите изображение</option>
+                        @foreach (Storage::disk('public')->files('img') as $files)
+                            <option
+                                @if ($category->image == $files)
+                                    selected
+                                @endif
+                                value="{{ $files }}">{{ $files }}</option>
+                        @endforeach
+                    </select>
+                </div>
 
-                    <div class="form-group">
-                        <label for="image">Изображение</label>
-                        <input type="text" class="form-control" id="image" name="image" value="{{ $category->image }}">
-                    </div>
+                <div class="form-group">
+                    <label for="icons">Иконка</label>
+                    <select name="icons" class="form-control" id="icons">
+                        @foreach (icons() as $k=> $icon)
+                            <option
 
-                    @include('admin.partials.categories.categories', ['option' => true])
+                                @if($category->icons == $k)
+                                    selected
+                                @endif
 
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Сохранить</button>
-                    </div>
+                                value="{{ $k }}">{{ $icon }}</option>
+                        @endforeach
+                    </select>
+                </div>
 
-                </form>
-            </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+            </form>
         </div>
     </div>
 @endsection

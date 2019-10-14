@@ -36,7 +36,13 @@
                     </div>
                 </div>
             </div>
-            @yield('content')
+
+            <div class="page-inner">
+                @include('admin.partials.alert')
+
+                @yield('content')
+            </div>
+
         </div>
         @include('admin.partials.footer')
     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -18,6 +19,8 @@ class FrontendController extends Controller
 
     public function pageShop()
     {
-        return view('pages.page_shop');
+        $categories = Category::get()->toTree();
+
+        return view('pages.page_shop', compact('categories'));
     }
 }

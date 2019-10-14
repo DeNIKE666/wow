@@ -20,12 +20,12 @@
                     <div class="collapse" id="categories" style="">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="">
+                                <a href="{{ route('categories') }}">
                                     <span class="sub-item">Все категории</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="{{ route('categorory.create') }}">
                                     <span class="sub-item">Создать категорию</span>
                                 </a>
                             </li>

@@ -4436,7 +4436,10 @@ label.error {
     background: #FFAD46; }
 
 .alert-danger {
-  border-left: 4px solid #F25961; }
+    border-left: 4px solid #e20e0efa;
+    background: #ea0f0f94;
+    color: white;
+    line-height: 34px;}
   .alert-danger [data-notify="icon"]:before {
     background: #F25961; }
 
@@ -14076,3 +14079,18 @@ body {
   background: linear-gradient(-45deg, #E80A15, #F25961) !important; }
 
 /*# sourceMappingURL=atlantis.css.map */
+
+.ul_error li {
+    font-weight: 500;
+}
+
+.error_header {
+    background: #f07273;
+    padding: 17px;
+    border-left: 4px solid #e20e0efa;
+}
+
+.error_header span {
+    color: white;
+    text-transform: uppercase;
+}

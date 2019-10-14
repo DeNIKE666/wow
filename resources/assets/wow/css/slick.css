@@ -125,7 +125,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('../img/ajax-loader.gif') center center no-repeat;
+    background: #fff url('../img_storage/ajax-loader.gif') center center no-repeat;
 }
 
 /* Arrows */
@@ -173,12 +173,12 @@
 }
 
 .slick-prev{
-    background: url(../img/prev-btn.png) no-repeat top center;
+    background: url(../img_storage/prev-btn.png) no-repeat top center;
     left: -40px;
 }
 
 .slick-next{
-    background: url(../img/next-btn.png) no-repeat top center;
+    background: url(../img_storage/next-btn.png) no-repeat top center;
     right: -40px;
 }
 

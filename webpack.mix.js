@@ -24,6 +24,7 @@ mix.styles([
 ] , 'public/assets/wow.css').version();
 
 mix.copy('resources/assets/wow/img' , 'public/img')
+mix.copy('resources/assets/wow/img_storage' , 'storage/app/public/img')
 mix.copy('resources/assets/wow/fonts' , 'public/assets/fonts')
 
 
@@ -66,4 +67,4 @@ mix.scripts([
 mix.copy('resources/js/atlantis/atlantis.min.js', 'public/assets');
 
 mix.copy('resources/assets/atlantis/fonts', 'public/assets/fonts')
-mix.copy('resources/assets/atlantis/img', 'public/img/admin')
+mix.copy('resources/assets/atlantis/img', 'storage/app/public/img/admin')
