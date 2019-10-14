@@ -12,5 +12,9 @@
 */
 
 Route::get('/', 'FrontendController@index')->name('frontend.index');
-Route::get('/page-info', 'FrontendController@pageInfo')->name('frontend.page.info');
-Route::get('/page-shop', 'FrontendController@pageShop')->name('frontend.page.shop');
+Route::get('/info', 'FrontendController@pageInfo')->name('frontend.page.info');
+Route::get('/shop', 'FrontendController@pageShop')->name('frontend.page.shop');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/' , 'Admin\AdminController@index')->name('admin');
+});

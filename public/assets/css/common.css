@@ -1,5 +1,5 @@
-*, 
-*:before, 
+*,
+*:before,
 *:after{
 	padding: 0;
 	-moz-box-sizing: border-box;
@@ -25,9 +25,9 @@ a:focus{
 	text-decoration: none;
 	outline: none;
 }
-figure img, 
-figure video, 
-figure object, 
+figure img,
+figure video,
+figure object,
 figure embed {
 	display:block;
 	max-width: 100%;
@@ -140,7 +140,7 @@ body{
 	line-height: 1;
 	color: #fff;
 	background-color: #161616;
-    overflow-x: hidden;	
+    overflow-x: hidden;
 }
 
 @media (min-width: 1340px){
@@ -157,10 +157,10 @@ body{
 
 html.mm{
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);  
+  height: calc(var(--vh, 1vh) * 100);
 }
 body.main {
-  background: #161616 url(../img/main.png) center center no-repeat;
+  background: #161616 url(../../img/main.png) center center no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
@@ -194,7 +194,7 @@ body.main .b-main,body.main .container, body.main .row, body.main .col-xs-12{
     width: 100%;
     height: 100%;
     top: 0;
-    background: url(../img/hero-center.png) center center no-repeat;
+    background: url(../../img/hero-center.png) center center no-repeat;
     background-size: contain;
     z-index: 2;
 }
@@ -205,7 +205,7 @@ body.main .b-main,body.main .container, body.main .row, body.main .col-xs-12{
     right: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/hero-left.png) center center no-repeat;
+    background: url(../../img/hero-left.png) center center no-repeat;
     background-size: contain;
     animation: hero-moves1 .9s ease-in-out;
     animation-fill-mode: forwards;
@@ -218,7 +218,7 @@ body.main .b-main,body.main .container, body.main .row, body.main .col-xs-12{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/hero-right.png) center center no-repeat;
+    background: url(../../img/hero-right.png) center center no-repeat;
     background-size: contain;
     animation: hero-moves2 .9s ease-in-out;
     animation-fill-mode: forwards;
@@ -254,7 +254,7 @@ a.info:hover, a.shop:hover {
     color: rgb(232, 167, 76);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}    
+}
 a.shop {
     right: 12%;
 }
@@ -330,7 +330,7 @@ a.info {
   content: '';
   display: table;
   clear: both;
-}  
+}
 .header-left{
   float: left;
   padding-top: 25px;
@@ -363,10 +363,10 @@ a.info {
 }
 .arrow-back a:hover span, .arrow-back a:hover img{
   opacity: 1;
-}  
+}
 .arrow-back a:active span, .arrow-back a:active img{
   opacity: 0.2;
-}  
+}
 
 .header-right{
   float: right;
@@ -379,10 +379,10 @@ a.logo-nav{
 }
 a.logo-nav > img{
   display: block;
-}  
+}
 .basket-box{
   display: inline-block;
-  vertical-align: bottom;  
+  vertical-align: bottom;
 }
 .basket{
   position: relative;
@@ -393,14 +393,14 @@ a.logo-nav > img{
   display: inline-block;
   vertical-align: bottom;
   cursor: pointer;
-  background: url(../img/basket.png) no-repeat 0 0;
+  background: url(../../img/basket.png) no-repeat 0 0;
   -webkit-transition: margin-right 0.4s;
   -o-transition: margin-right 0.4s;
   -moz-transition: margin-right 0.4s;
   transition: margin-right 0.4s;
 }
 .active .basket{
-  background: url(../img/basket.png) no-repeat 0 -24px;
+  background: url(../../img/basket.png) no-repeat 0 -24px;
   margin-right: 20px;
 }
 .basket-price{
@@ -423,7 +423,7 @@ span.valuta{
 .open span.valuta > .caret {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
-}  
+}
 span.valuta > .caret {
   display: inline-block;
   width: 0;
@@ -461,7 +461,7 @@ span.valuta > .caret:after {
   position: relative;
   left: 0;
   visibility: visible;
-}  
+}
 
 .basket-price .dropdown-menu {
     position: absolute;
@@ -530,7 +530,7 @@ ul.menu > li{
   display: inline-block;
   vertical-align: top;
   padding: 0 20px;
-}  
+}
 ul.menu > li > a{
   font-size: 16px;
   line-height: 20px;
@@ -542,10 +542,10 @@ ul.menu > li > a{
   -o-transition: color 0.4s;
   -moz-transition: color 0.4s;
   transition: color 0.4s;
-}  
+}
 ul.menu > li > a:hover{
   color: #FDA53F;
-}  
+}
 
 
 
@@ -566,7 +566,7 @@ ul.menu > li > a:hover{
   position: absolute;
   left: 9px;
   top: 0;
-}  
+}
 .menu-btn > span:before{
   content: '';
   height: 18px;
@@ -579,7 +579,7 @@ ul.menu > li > a:hover{
   -o-transition: transform 0.4s;
   -moz-transition: transform 0.4s;
   transition: transform 0.4s;
-}  
+}
 .menu-btn > span:after{
   content: '';
   height: 10px;
@@ -592,7 +592,7 @@ ul.menu > li > a:hover{
   -o-transition: transform 0.4s;
   -moz-transition: transform 0.4s;
   transition: transform 0.4s;
-} 
+}
 
 .menu-btn.active > span:after {
     content: '';
@@ -605,7 +605,7 @@ ul.menu > li > a:hover{
 }
 .menu-btn.active > span{
   background: transparent;
-}  
+}
 .menu-btn.active > span:before {
     content: '';
     height: 30px;
@@ -639,7 +639,7 @@ ul.menu > li > a:hover{
     ul.menu > li > a {
         font-size: 13px;
         line-height: 17px;
-    }    
+    }
 
 
 }
@@ -670,7 +670,7 @@ ul.menu > li > a:hover{
       margin-top: 25px;
     }
 
-}  
+}
 
 
 
@@ -716,7 +716,7 @@ ul.menu > li > a:hover{
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-}  
+}
 .b-card-left-line > div:first-child > span{
   display: block;
   font-size: 18px;
@@ -792,10 +792,10 @@ ul.menu > li > a:hover{
 }
 
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 
@@ -849,7 +849,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 14px;
   right: 0;
   color: #fff;
-}  
+}
 
 .b-card-del{
   display: inline-block;
@@ -872,7 +872,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .b-card-del:hover > span{
   color: #fff;
-}  
+}
 .b-card-del > div{
   width: 24px;
   height: 24px;
@@ -891,7 +891,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: -3px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}  
+}
 .b-card-del > div:after{
   content: '';
   width: 1px;
@@ -902,7 +902,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: -3px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-} 
+}
 
 .b-card-del > div:before, .b-card-del > div:after{
   opacity: 0;
@@ -913,7 +913,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .b-card-del:hover > div:before, .b-card-del:hover > div:after{
   opacity: 1;
-}  
+}
 
 
 .b-input{
@@ -953,10 +953,10 @@ input[type=number]::-webkit-outer-spin-button {
   top: -16px;
   font-size: 12px;
   line-height: 16px;
-}  
+}
 .b-card-left-cupon .b-input .form-control {
   text-align: center;
-}  
+}
 .b-input .form-control {
     display: block;
     width: 100%;
@@ -1028,7 +1028,7 @@ input[type=number]::-webkit-outer-spin-button {
   bottom: 100%;
   font-size: 12px;
   line-height: 16px;
-}  
+}
 
 
 .checkbox,
@@ -1071,13 +1071,13 @@ span.label{
   right: 4px;
   bottom: 4px;
   left: 4px;
-  border-radius: 50%;  
+  border-radius: 50%;
   background: transparent;
   -webkit-transition: background 0.3s;
   -o-transition: background 0.3s;
   -moz-transition: background 0.3s;
   transition: background 0.3s;
-}  
+}
 .checkbox:checked + .checkbox-custom::before,
 .radio:checked + .radio-custom::before {
   content: "";
@@ -1118,7 +1118,7 @@ span.label{
 }
 .radio-items > .radio-item:last-child{
   margin-right: 0;
-}  
+}
 
 .b-politic-checkbox{
   padding-left: 15px;
@@ -1154,7 +1154,7 @@ span.label{
 label:hover > .tooltip-rch{
   opacity: 1;
   visibility: visible;
-} 
+}
 
 
 .check-item .checkbox-custom{
@@ -1220,18 +1220,18 @@ label:hover > .tooltip-rch{
 }
 .b-card-btn .btn:active{
     background: #d24a43;
-}    
+}
 .b-card-btn .btn > span{
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
     vertical-align: bottom;
-}    
+}
 .b-card-btn .btn > span > span{
     font-weight: normal;
     display: inline-block;
     vertical-align: bottom;
-}    
+}
 
 
 @media (max-width: 1339px){
@@ -1276,7 +1276,7 @@ label:hover > .tooltip-rch{
 
   .tooltip-rch{
     display: none;
-  }  
+  }
     .contact-details-left {
         float: none;
         width: 100%;
@@ -1341,7 +1341,7 @@ label:hover > .tooltip-rch{
     }
 
 
-}    
+}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1375,7 +1375,7 @@ footer{
 .footer-copyr{
     font-size: 14px;
     line-height: 18px;
-    color: #5e5e5e;  
+    color: #5e5e5e;
 }
 .footer-copyr span{
     font-family: 'Cantata One';
@@ -1395,18 +1395,18 @@ footer{
     content: '';
     width: 405px;
     height: 291px;
-    background: url(../img/footer-bg.png) no-repeat right bottom;
+    background: url(../../img/footer-bg.png) no-repeat right bottom;
     position: absolute;
     right: 100%;
     bottom: 0;
-}    
+}
 
 .socials{
     position: relative;
     display: inline-block;
-    vertical-align: top;   
+    vertical-align: top;
     margin-top: 10px;
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
 }
 .socials:after{
     content: '';
@@ -1432,69 +1432,69 @@ footer{
 .socials > div:first-child{
     opacity: 1;
     visibility: visible;
-}   
+}
 .socials > div:nth-child(2){
     opacity: 1;
     visibility: visible;
-}  
+}
 .socials > div > a{
     display: block;
     width: 100%;
     height: 100%;
-}    
+}
 a.ic-email{
-    background: url(../img/socials.png) no-repeat 0 0;
+    background: url(../../img/socials.png) no-repeat 0 0;
 }
 a.ic-email:hover{
-    background: url(../img/socials.png) no-repeat 0 -25px;
+    background: url(../../img/socials.png) no-repeat 0 -25px;
 }
 a.ic-instagram{
-    background: url(../img/socials.png) no-repeat -26px 0;
+    background: url(../../img/socials.png) no-repeat -26px 0;
 }
 a.ic-instagram:hover{
-    background: url(../img/socials.png) no-repeat -26px -25px;
+    background: url(../../img/socials.png) no-repeat -26px -25px;
 }
 a.ic-youtube{
-    background: url(../img/socials.png) no-repeat -52px 0;
+    background: url(../../img/socials.png) no-repeat -52px 0;
 }
 a.ic-youtube:hover{
-    background: url(../img/socials.png) no-repeat -52px -25px;
+    background: url(../../img/socials.png) no-repeat -52px -25px;
 }
 a.ic-twitter{
-    background: url(../img/socials.png) no-repeat -78px 0;    
+    background: url(../../img/socials.png) no-repeat -78px 0;
 }
 a.ic-twitter:hover{
-    background: url(../img/socials.png) no-repeat -78px -25px;    
+    background: url(../../img/socials.png) no-repeat -78px -25px;
 }
 a.ic-facebook{
-    background: url(../img/socials.png) no-repeat -104px 0;    
+    background: url(../../img/socials.png) no-repeat -104px 0;
 }
 a.ic-facebook:hover{
-    background: url(../img/socials.png) no-repeat -104px -25px;    
+    background: url(../../img/socials.png) no-repeat -104px -25px;
 }
 a.ic-telegram{
-    background: url(../img/socials.png) no-repeat -130px 0;    
+    background: url(../../img/socials.png) no-repeat -130px 0;
 }
 a.ic-telegram:hover{
-    background: url(../img/socials.png) no-repeat -130px -25px;    
+    background: url(../../img/socials.png) no-repeat -130px -25px;
 }
 a.ic-whatsapp{
-    background: url(../img/socials.png) no-repeat -156px 0;    
+    background: url(../../img/socials.png) no-repeat -156px 0;
 }
 a.ic-whatsapp:hover{
-    background: url(../img/socials.png) no-repeat -156px -25px;    
+    background: url(../../img/socials.png) no-repeat -156px -25px;
 }
 a.ic-skype{
-    background: url(../img/socials.png) no-repeat -182px 0;    
+    background: url(../../img/socials.png) no-repeat -182px 0;
 }
 a.ic-skype:hover{
-    background: url(../img/socials.png) no-repeat -182px -25px;    
+    background: url(../../img/socials.png) no-repeat -182px -25px;
 }
 a.ic-viber{
-    background: url(../img/socials.png) no-repeat -208px 0;    
+    background: url(../../img/socials.png) no-repeat -208px 0;
 }
 a.ic-viber:hover{
-    background: url(../img/socials.png) no-repeat -208px -25px;    
+    background: url(../../img/socials.png) no-repeat -208px -25px;
 }
 
 .socials > .socials-btn {
@@ -1516,10 +1516,10 @@ a.ic-viber:hover{
     left: 100%;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-}  
-.socials:hover > .socials-btn > span{  
+}
+.socials:hover > .socials-btn > span{
     background: #fff;
-}    
+}
 .socials-btn > span {
     background: #606060;
     height: 24px;
@@ -1571,10 +1571,10 @@ a.ic-viber:hover{
     -o-transition: color 0.4s;
     -moz-transition: color 0.4s;
     transition: color 0.4s;
-}    
+}
 .footer-email > a:hover{
     color: #fff;
-}    
+}
 
 .footer-logo {
     position: absolute;
@@ -1663,7 +1663,7 @@ a.ic-viber:hover{
     }
     .footer-right{
         height: auto;
-        padding-bottom: 15px;    
+        padding-bottom: 15px;
     }
     .footer-logo {
         position: absolute;
@@ -1671,7 +1671,7 @@ a.ic-viber:hover{
         right: 0px;
     }
 
-}  
+}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1704,7 +1704,7 @@ a.ic-viber:hover{
 }
 .pageshop-title > span:first-child{
     color: #fff
-}    
+}
 .pageshop-title > span:last-child{
     padding-left: 18px;
 }
@@ -1720,7 +1720,7 @@ a.ic-viber:hover{
     content: '';
     display: table;
     clear: both;
-}    
+}
 .pageshop-slider-item > .shop-card{
     float: left;
     width: 100%;
@@ -1739,7 +1739,7 @@ a.ic-viber:hover{
     position: absolute;
     left: -4px;
     top: -4px;
-    background: #e6a448; 
+    background: #e6a448;
     opacity: 0;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
@@ -1748,7 +1748,7 @@ a.ic-viber:hover{
 }
 .shop-card > a:hover:before{
     opacity: 1;
-}    
+}
 .shop-card-head{
     position: relative;
     padding-left: 20px;
@@ -1762,13 +1762,13 @@ a.ic-viber:hover{
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-}    
+}
 .shop-card-head > div{
     font-size: 20px;
     line-height: 24px;
     color: #fff;
     text-transform: uppercase;
-}   
+}
 .shop-card-img{
     position: relative;
     height: 345px;
@@ -1795,7 +1795,7 @@ a.ic-viber:hover{
 }
 .shop-card > a:hover > .shop-card-img > div:last-child{
     height: 100%;
-}    
+}
 
 .shop-card-price{
     padding-top: 5px;
@@ -1825,7 +1825,7 @@ a.ic-viber:hover{
     -o-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-}    
+}
 
 .shop-card-price > span {
     opacity: 0;
@@ -1846,7 +1846,7 @@ a.ic-viber:hover{
 }
 .shop-card > a:hover .shop-card-price{
     padding-right: 20px;
-}    
+}
 .shop-card > a:hover .shop-card-yellow {
     font-size: 50px;
     line-height: 54px;
@@ -1854,11 +1854,11 @@ a.ic-viber:hover{
 .shop-card > a:hover  .shop-card-yellow sup{
     font-size: 28px;
     line-height: 28px;
-}  
+}
 
 .shop-card > a:hover  .shop-card-price > span{
     opacity: 1;
-}    
+}
 
 
 
@@ -1925,7 +1925,7 @@ a.ic-viber:hover{
     .slick-dots {
         bottom: 240px;
         left: -85px;
-    }    
+    }
 
 
 }
@@ -1963,7 +1963,7 @@ a.ic-viber:hover{
         left: 0px;
         text-align: center;
         width: 100%;
-    }    
+    }
     .slick-dots li {
         margin: 0px 4px;
         display: inline-block;
@@ -1992,7 +1992,7 @@ a.ic-viber:hover{
 
 @media (max-width: 767px){
 
-}  
+}
 
 
 
@@ -2017,7 +2017,7 @@ a.ic-viber:hover{
     content: '';
     display: table;
     clear: both;
-}    
+}
 .pageshopm-item{
     width: 33.3333%;
     float: left;
@@ -2032,27 +2032,27 @@ a.ic-viber:hover{
     position: relative;
     -webkit-box-shadow: 0px 0px 15px 0 rgba(255,255,255,0.03);
     box-shadow: 0px 0px 15px 0 rgba(255,255,255,0.03);
-}  
+}
 .pageshopm-item > a.star:after{
     content: '';
     width: 26px;
     height: 25px;
-    background: url(../img/star.png) no-repeat 0 0;
+    background: url(../../img/star.png) no-repeat 0 0;
     position: absolute;
     left: 24px;
     top: 50%;
     margin-top: -13px;
-}   
+}
 .pageshopm-item > a.percent:after{
     content: '';
     width: 26px;
     height: 25px;
-    background: url(../img/percent.png) no-repeat 0 0;
+    background: url(../../img/percent.png) no-repeat 0 0;
     position: absolute;
     left: 24px;
     top: 50%;
     margin-top: -13px;
-}  
+}
 .pageshopm-item > a > span{
     display: table-cell;
     vertical-align: middle;
@@ -2067,7 +2067,7 @@ a.ic-viber:hover{
     -o-transition: color 0.3s, background: 0.3s;
     -moz-transition: color 0.3s, background: 0.3s;
     transition: color 0.3s, background: 0.3s;
-}    
+}
 
 .pageshopm-item > a:before {
     content: '';
@@ -2092,10 +2092,10 @@ a.ic-viber:hover{
 }
 .pageshopm-item > a:active:before{
     opacity: 0;
-}    
+}
 .pageshopm-item > a:active > span{
     color: #000;
-}    
+}
 
 .pageshopm-item-inf-t{
     display: table;
@@ -2138,10 +2138,10 @@ a.ic-viber:hover{
 }
 .pageshopm-item-inf.top-line-4{
     top: -100%;
-}    
+}
 .pageshopm-item-inf.top-line-3{
     top: -100%;
-}   
+}
 
 .pageshopm-item > a:hover + .pageshopm-item-inf.top-line-1{
     opacity: 1;
@@ -2199,7 +2199,7 @@ a.ic-viber:hover{
   .pageshopm-item > a > span {
       font-size: 15px;
       line-height: 22px;
-  }    
+  }
   a.star > span, a.percent > span{
     padding-left: 24px;
   }
@@ -2224,7 +2224,7 @@ a.ic-viber:hover{
     padding-bottom: 0;
   }
 
-}  
+}
 
 
 @media (max-width: 539px){
@@ -2242,7 +2242,7 @@ a.ic-viber:hover{
       margin-bottom: 20px;
   }
 
-}  
+}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2267,7 +2267,7 @@ a.ic-viber:hover{
   width: 50%;
   float: left;
   position: relative;
-}  
+}
 .b-pageshopmo-box-left{
   padding-left: 95px;
   padding-right: 45px;
@@ -2281,7 +2281,7 @@ a.ic-viber:hover{
   z-index: 2;
   background: #161616;
   min-height: 565px;
-}  
+}
 .b-pageshopmo-img > img{
   display: block;
   width: 274px;
@@ -2304,7 +2304,7 @@ a.ic-viber:hover{
   position: absolute;
   top: 0;
   left: 20px;
-}  
+}
 .b-pageshopmo-img > div > span{
   display: block;
   font-size: 24px;
@@ -2312,13 +2312,13 @@ a.ic-viber:hover{
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-} 
+}
 .b-pageshopmo-img > div > div{
   font-size: 20px;
   line-height: 24px;
   color: #fff;
   text-transform: uppercase;
-}  
+}
 
 
 .nav-tabs {
@@ -2391,7 +2391,7 @@ a.ic-viber:hover{
   left: 0;
   bottom: 100%;
   z-index: 4;
-} 
+}
 .tab-pane p{
   font-size: 16px;
   line-height: 20px;
@@ -2450,16 +2450,16 @@ a.ic-viber:hover{
 }
 .b-pageshopmo-box .tab-close:active:before, .b-pageshopmo-box .tab-close:active:after {
   background: #585858;
-}  
+}
 
 
 
 .tab-close:hover{
   color: #fff;
-}  
+}
 .tab-close:active {
   color: #585858;
-}  
+}
 .tab-pane-tit{
   font-size: 18px;
   line-height: 22px;
@@ -2477,7 +2477,7 @@ a.ic-viber:hover{
   line-height: 20px;
   color: #fff;
   margin-bottom: 15px;
-}  
+}
 .tab-pane-graytext{
   font-size: 14px;
   line-height: 18px;
@@ -2491,10 +2491,10 @@ a.ic-viber:hover{
   -o-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
-}  
+}
 .tab-pane-graytext a:hover{
   color: #5e5e5e;
-}  
+}
 
 .tab-content {
     position: absolute;
@@ -2513,7 +2513,7 @@ a.ic-viber:hover{
   left: 0;
   bottom: 100%;
   z-index: 4;
-}  
+}
 .tab-pane:after {
     content: '';
     width: 100%;
@@ -2548,7 +2548,7 @@ a.ic-viber:hover{
 }
 .b-pageshopmo-main-acc span{
   font-weight: normal;
-}  
+}
 
 
 
@@ -2594,7 +2594,7 @@ a.ic-viber:hover{
 .circle-box:hover .tooltip-graph{
   opacity: 1;
   visibility: visible;
-}  
+}
 
 .circle-box {
     width: 90px;
@@ -2620,7 +2620,7 @@ a.ic-viber:hover{
     top: 1px;
     overflow: visible;
     transform: rotate(45deg);
-}  
+}
 .circle-box > span{
   font-size: 16px;
   line-height: 16px;
@@ -2639,7 +2639,7 @@ a.ic-viber:hover{
 }
 .circle-box.circle-box-full > span.full {
   display: block;
-}  
+}
 .circle-box > span.full > span{
   display: block;
   font-size: 14px;
@@ -2720,12 +2720,12 @@ a.ic-viber:hover{
 }
 .b-pageshopmo-main-btn .btn2:active{
   background: #d24a43;
-}  
+}
 .b-pageshopmo-main-btn .btn2 > .span-btn-price{
   font-weight: 500;
   display: block;
   vertical-align: top;
-}  
+}
 
 
 .b-pageshopmo-main-btn .quantity-block{
@@ -2741,7 +2741,7 @@ a.ic-viber:hover{
   font-size: 18px;
   font-weight: 600;
   line-height: 40px;
-}  
+}
 .b-pageshopmo-main-btn .btn2:hover .span-btn-price-hover{
   display: block;
 }
@@ -2759,7 +2759,7 @@ a.ic-viber:hover{
   font-size: 18px;
   font-weight: 600;
   line-height: 40px;
-}  
+}
 .b-pageshopmo-main-btn .btn2:active .span-btn-price-active{
   display: block;
 }
@@ -2856,7 +2856,7 @@ a.ic-viber:hover{
 
 .tooltip-graph{
   display: none;
-}  
+}
 .b-pageshopmo-box > .b-pageshopmo-box-left{
   width: 100%;
   float: none;
@@ -2879,7 +2879,7 @@ a.ic-viber:hover{
 .pageshop-title > span {
     display: block;
     font-size: 38.36px;
-}    
+}
 @keyframes img-anim {
   to {
     -webkit-filter: grayscale(0%);
@@ -2920,7 +2920,7 @@ a.ic-viber:hover{
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-}    
+}
 .b-pageshopmo-main-btn .quantity-block {
     margin-right: 0px;
 }
@@ -2947,7 +2947,7 @@ a.ic-viber:hover{
 
 
 
-}  
+}
 
 
 
@@ -2978,7 +2978,7 @@ a.ic-viber:hover{
   content: '';
   display: table;
   clear: both;
-}  
+}
 
 
 .b-pageshopcopy-card-box .shop-card{
@@ -2990,7 +2990,7 @@ a.ic-viber:hover{
 
 .b-pageshopcopy-box .pageshop-title {
     bottom: 25%;
-}    
+}
 
 .b-pageshopcopy-card-box .shop-card-head > span {
     font-size: 18px;
@@ -3028,12 +3028,12 @@ a.ic-viber:hover{
 }
 .b-pageshopcopy-card-box .shop-card-price > span:hover{
   font-size: 7px;
-}  
+}
 .b-pageshopcopy-card-box .shop-card-price > span > span{
   font-size: 8px;
   line-height: 12px;
   font-weight: 600;
-}  
+}
 .b-pageshopcopy-card-box .shop-card > a:hover .shop-card-price {
     padding-right: 100px;
 }
@@ -3114,7 +3114,7 @@ a.ic-viber:hover{
     margin-bottom: 30px;
 }
 
-}  
+}
 
 
 @media (max-width: 499px){
@@ -3129,7 +3129,7 @@ a.ic-viber:hover{
     margin-bottom: 30px;
 }
 
-} 
+}
 
 
 
@@ -3141,7 +3141,7 @@ a.ic-viber:hover{
 .b-pageinfo-about{
     min-height: 450px;
     height: calc(100vh - 96px);
-    background: url(../img/orc.png) center center no-repeat;
+    background: url(../../img/orc.png) center center no-repeat;
     background-size: 100%;
     padding-top: 100px;
 }
@@ -3158,7 +3158,7 @@ a.ic-viber:hover{
 }
 .b-pageinfo-text > span > span{
   color: #e8a549;
-}  
+}
 .b-pageinfo-text{
   font-size: 18px;
   line-height: 24px;
@@ -3216,13 +3216,13 @@ a.ic-viber:hover{
 }
 .b-pageinfo-about-policy .nav-tabs > li.active > a{
   color: #161616;
-}  
+}
 .b-pageinfo-about-policy .nav-tabs > li > a:hover{
   color: #fff;
-}  
+}
 .b-pageinfo-about-policy .nav-tabs > li > a:active{
   color: #e8a549;
-}  
+}
 .b-pageinfo-about-policy .tab-content {
     position: absolute;
     z-index: 1;
@@ -3242,7 +3242,7 @@ a.ic-viber:hover{
 }
 .b-pageinfo-about-policy .tab-pane .col-xs-12{
   padding: 0 170px;
-}  
+}
 .b-pageinfo-about-policy .tab-pane:before, .b-pageinfo-about-policy .tab-pane:after{
   content: none;
 }
@@ -3260,10 +3260,10 @@ a.ic-viber:hover{
   font-weight: 600;
   color: #161616;
   margin-bottom: 16px;
-}  
+}
 .b-pageinfo-about-policy .tab-pane span.not-bold{
   font-weight: normal;
-}  
+}
 .b-pageinfo-about-policy .tab-pane ul{
   list-style: none;
   margin-bottom: 20px;
@@ -3273,8 +3273,8 @@ a.ic-viber:hover{
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  color: #161616;  
-}  
+  color: #161616;
+}
 
 
 
@@ -3319,37 +3319,37 @@ a.ic-viber:hover{
 
 
 .b-pageinfo-work{
-  background: url(../img/work-with-us-bg.jpg) center 0 no-repeat;
+  background: url(../../img/work-with-us-bg.jpg) center 0 no-repeat;
   background-size: 100%;
   position: relative;
   padding-top: 140px;
   padding-bottom: 175px;
 }
 .b-pageinfo-work-sword{
-  background: url(../img/sword-green.png) center 0 no-repeat;
+  background: url(../../img/sword-green.png) center 0 no-repeat;
   background-size: 100%;
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  
+
 }
 .b-pageinfo-work-anim{
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0;  
+  top: 0;
 }
 .b-pageinfo-work-anim-inn{
-  background: url(../img/anim.png) center 0 no-repeat;
+  background: url(../../img/anim.png) center 0 no-repeat;
   background-size: 100%;
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0;  
+  top: 0;
 }
 
 .b-pageinfo-work-img{
@@ -3380,7 +3380,7 @@ a.ic-viber:hover{
 
 .b-pageinfo-soc{
   text-align: center;
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
 }
 .socials2 {
     position: relative;
@@ -3442,40 +3442,40 @@ a.ic-viber:hover{
 }
 .socials2 > div:hover{
   background: #1b1b1b;
-}  
+}
 
 
 .socials2 > div:active{
   background: #161616;
 }
- 
+
 
 .socials2 > div:hover > a.ic-email{
-    background: url(../img/socials.png) no-repeat 0 -25px;
+    background: url(../../img/socials.png) no-repeat 0 -25px;
 }
 .socials2 > div:hover > a.ic-instagram{
-    background: url(../img/socials.png) no-repeat -26px -25px;
+    background: url(../../img/socials.png) no-repeat -26px -25px;
 }
 .socials2 > div:hover > a.ic-youtube{
-    background: url(../img/socials.png) no-repeat -52px -25px;
+    background: url(../../img/socials.png) no-repeat -52px -25px;
 }
 .socials2 > div:hover > a.ic-twitter{
-    background: url(../img/socials.png) no-repeat -78px -25px;    
+    background: url(../../img/socials.png) no-repeat -78px -25px;
 }
 .socials2 > div:hover > a.ic-facebook{
-    background: url(../img/socials.png) no-repeat -104px -25px;    
+    background: url(../../img/socials.png) no-repeat -104px -25px;
 }
 .socials2 > div:hover > a.ic-telegram{
-    background: url(../img/socials.png) no-repeat -130px -25px;    
+    background: url(../../img/socials.png) no-repeat -130px -25px;
 }
 .socials2 > div:hover > a.ic-whatsapp{
-    background: url(../img/socials.png) no-repeat -156px -25px;    
+    background: url(../../img/socials.png) no-repeat -156px -25px;
 }
 .socials2 > div:hover > a.ic-skype{
-    background: url(../img/socials.png) no-repeat -182px -25px;    
+    background: url(../../img/socials.png) no-repeat -182px -25px;
 }
 .socials2 > div:hover > a.ic-viber{
-    background: url(../img/socials.png) no-repeat -208px -25px;    
+    background: url(../../img/socials.png) no-repeat -208px -25px;
 }
 
 
@@ -3512,11 +3512,11 @@ a.ic-viber:hover{
 }
 .socials2 > div:active > .s-pod{
   opacity: 0;
-} 
+}
 .shadow-info {
     width: auto;
     height: 36px;
-    background: url(../img/shadow.png) 0 0 no-repeat;
+    background: url(../../img/shadow.png) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -3682,7 +3682,7 @@ a.ic-viber:hover{
 }
 .b-pageinfo-work .b-pageinfo-text{
      font-size: 16px;
-    line-height: 22px; 
+    line-height: 22px;
 }
 .b-pageinfo-team-img {
     text-align: center;
@@ -3705,7 +3705,7 @@ a.ic-viber:hover{
   padding-bottom: 0;
 }
 
-}  
+}
 
 
 
@@ -3741,7 +3741,7 @@ a.ic-viber:hover{
 
 
 
-}	
+}
 
 
 
