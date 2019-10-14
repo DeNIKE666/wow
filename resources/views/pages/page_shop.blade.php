@@ -1,5 +1,7 @@
 @extends('layouts.wow')
 
+@section('title', 'Shop')
+
 @section('content')
     <div class="b-pageshopm">
         <div class="container">
@@ -13,7 +15,9 @@
                         <div class="b-pageshopm-box">
                             @foreach ($categories as $category)
                                 <div class="pageshopm-item">
-                                    <a href="#" class="{{ $category->icons }}"><span>{!! $category->name !!}</span></a>
+                                    <a href="#" class="{{ $category->icons }}">
+                                        <span>{!! lastReplace($category->name) !!}</span>
+                                    </a>
                                     <div class="pageshopm-item-inf {{ $category->class }}" style="background: url({{ image($category->image) }}) no-repeat center center; background-size: cover;">
                                         <div class="pageshopm-item-inf-t">
                                             <div class="pageshopm-item-inf-tc">

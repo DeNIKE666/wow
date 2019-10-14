@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="true">
     <meta name="keywords" content="">
-    <title>Page Info</title>
+    <title>@yield('title')</title>
     <!-- Import Styles -->
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/stylesheet.css') }}">

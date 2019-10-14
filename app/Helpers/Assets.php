@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 if (!function_exists('image')) {
     function image($path)
     {
@@ -28,4 +30,13 @@ if (!function_exists('position')) {
         ];
     }
 }
+
+if (!function_exists('lastReplace')) {
+    function lastReplace($str)
+    {
+        return Str::replaceLast(' ', '<br>', $str);
+    }
+}
+
+
 

@@ -20,8 +20,5 @@ class Category extends Model
 
     public $timestamps = false;
 
-    public function getNameAttribute()
-    {
-       return $str = str_replace(' ', '<br>', $this->attributes['name']);
-    }
+
 }
