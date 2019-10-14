@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', 'FrontendController@index')->name('frontend.index');
-Route::get('/info', 'FrontendController@pageInfo')->name('frontend.page.info');
-Route::get('/shop', 'FrontendController@pageShop')->name('frontend.page.shop');
+Route::prefix('/')->namespace('Frontend')->group(function () {
+    Route::get('/', 'FrontendController@index')->name('frontend.index');
+    Route::get('/info', 'FrontendController@pageInfo')->name('frontend.page.info');
+    Route::get('/shop', 'FrontendController@pageShop')->name('frontend.page.shop');
+
+    Route::prefix('categories')->group(function () {
+        Route::get('/subcategory/{category}', 'CategoryController@show')->name('subcategory');
+    });
+});
 
 Route::prefix('admin')->namespace('Admin')->group(function () {
     Route::get('/' , 'AdminController@index')->name('admin');
