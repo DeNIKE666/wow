@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Support\Str;
+/**
+ * Функция путь до картинки
+ */
 
 if (!function_exists('image')) {
     function image($path)
@@ -8,6 +10,10 @@ if (!function_exists('image')) {
         return asset('storage/' . $path);
     }
 }
+
+/**
+ * Функция для генерации иконок
+ */
 
 if (!function_exists('icons')) {
     function icons()
@@ -18,6 +24,10 @@ if (!function_exists('icons')) {
         ];
     }
 }
+
+/**
+ * Функция позиция всплывающего окна в категории
+ */
 
 if (!function_exists('position')) {
     function position()
@@ -30,13 +40,3 @@ if (!function_exists('position')) {
         ];
     }
 }
-
-if (!function_exists('lastReplace')) {
-    function lastReplace($str)
-    {
-        return Str::replaceLast(' ', '<br>', $str);
-    }
-}
-
-
-

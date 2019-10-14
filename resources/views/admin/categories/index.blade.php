@@ -13,13 +13,14 @@
 
                 <div class="card-body">
                     @foreach ($categories as $category)
-                        <a href="{{ route('categorory.edit', $category) }}">{{ $category->name }} </a>
+                        <a href="{{ route('category.edit', $category) }}">{{ $category->name }} </a>
                         <div class="float-right">
-                            <a href="{{ route('categorory.show', $category) }}" data-toggle="modal" data-target="#subcategory">добавить подкатегорию</a>
+                            <a href="{{ route('category.show', $category) }}"><i class="fad fa-eye"></i></a>
                         </div>
                         @include('admin.partials.categories.ul', ['category' => $category->children])
                     @endforeach
-                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#category"> Добавить
+                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#category">
+                        Добавить
                         категорию
                     </button>
                 </div>
@@ -40,7 +41,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form action="{{ route('categorory.create') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('category.create') }}" method="POST" enctype="multipart/form-data">
                         @CSRF
                         <div class="form-group">
                             <label for="category_name">Название</label>

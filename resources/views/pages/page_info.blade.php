@@ -1,6 +1,6 @@
 @extends('layouts.wow')
 
-@section('title' , 'info')
+@section('title' , 'Page-info')
 
 @section('content')
 

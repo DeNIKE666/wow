@@ -25,7 +25,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('categorory.create') }}">
+                                <a href="{{ route('category.create') }}">
                                     <span class="sub-item">Создать категорию</span>
                                 </a>
                             </li>

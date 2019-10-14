@@ -20,10 +20,11 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
 
     Route::prefix('categories')->group(function () {
         Route::get('/', 'CategoryController@index')->name('categories');
-        Route::post('/create', 'CategoryController@create')->name('categorory.create');
-        Route::post('/subCategory/{category}', 'CategoryController@show')->name('categorory.subcategory');
-        Route::get('/show/{category}', 'CategoryController@show')->name('categorory.show');
-        Route::get('/edit/{category}', 'CategoryController@edit')->name('categorory.edit');
-        Route::post('/update/{category}', 'CategoryController@update')->name('categorory.update');
+        Route::post('/create', 'CategoryController@create')->name('category.create');
+        Route::post('/subCategory/{category}', 'CategoryController@subCategory')->name('category.subcategory');
+        Route::get('/show/{category}', 'CategoryController@show')->name('category.show');
+        Route::get('/edit/{category}', 'CategoryController@edit')->name('category.edit');
+        Route::post('/update/{category}', 'CategoryController@update')->name('category.update');
+        Route::get('/delete/{category}', 'CategoryController@delete')->name('category.delete');
     });
 });

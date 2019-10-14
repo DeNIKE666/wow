@@ -34,10 +34,7 @@
             <div class="col-xs-12">
                 <div class="header-box">
                     <div class="header-left">
-                        <div class="arrow-back"><a href="{{ url()->previous() }}">
-                                <img src="img/arrow-left.png" alt="">
-                                <span>Back</span></a>
-                        </div>
+                        <div class="arrow-back"><a href="{{ url()->previous() }}"><img src="img/arrow-left.png" alt=""><span>Back</span></a></div>
                     </div>
                     <div class="header-right">
                         <a href="#" class="logo-nav"><img src="img/logo-nav.png" alt="img"></a>

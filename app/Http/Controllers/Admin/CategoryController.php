@@ -27,10 +27,22 @@ class CategoryController extends Controller
      */
     public function create(RequestCategory $request)
     {
-
         Category::create($request->all());
 
         return redirect()->route('categories');
+    }
+
+    /**
+     * @param RequestCategory $request
+     * @param Category $category
+     * @return \Illuminate\Http\RedirectResponse
+     * Создание подкатегорий
+     */
+
+    public function subCategory(RequestCategory $request, Category $category)
+    {
+        $category->children()->create($request->all());
+        return redirect()->route('category.show', $category);
     }
 
     /**
@@ -65,6 +77,21 @@ class CategoryController extends Controller
     public function update(RequestCategory $request, Category $category)
     {
         $category->update($request->all());
+
+        return redirect()->route('categories');
+    }
+
+
+    /**
+     * @param Category $category
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
+     * Удаление категории
+     */
+
+    public function delete(Category $category) {
+
+        $category->delete();
 
         return redirect()->route('categories');
     }
