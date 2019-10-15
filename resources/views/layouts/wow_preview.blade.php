@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru" class="mm">
 <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="true">
     <meta name="keywords" content="">
-    <title>Main</title>
+    <title>@yield('title')</title>
     <!-- Import Styles -->
 
 

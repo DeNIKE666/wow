@@ -1,5 +1,7 @@
 @extends('layouts.wow_preview')
 
+@section('title', 'WOW')
+
 @section('content')
     <div class="b-main">
         <div class="hero2"></div>

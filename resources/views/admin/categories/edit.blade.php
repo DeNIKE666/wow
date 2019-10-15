@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Редактирование категории')
+
 @section('content')
     <div class="card">
         <div class="card-body">
