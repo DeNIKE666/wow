@@ -8,7 +8,8 @@ use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
-    public function show(Category $category) {
+    public function show(Category $category)
+    {
         return view('pages.sub_categories', compact('category'));
     }
 }

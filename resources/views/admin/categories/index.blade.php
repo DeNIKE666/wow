@@ -8,21 +8,17 @@
             <div class="card">
 
                 <div class="card-header">
-                    <div class="card-title">Категории</div>
+                    <div class="card-title">Категории | <button class="btn btn-primary" data-toggle="modal" data-target="#category">Добавить категорию</button></div>
                 </div>
 
                 <div class="card-body">
                     @foreach ($categories as $category)
                         <a href="{{ route('category.edit', $category) }}">{{ $category->name }} </a>
                         <div class="float-right">
-                            <a href="{{ route('category.show', $category) }}"><i class="fad fa-eye"></i></a>
+                            <a href="{{ route('category.show', $category) }}"><i class="far fa-plus-circle"></i></a>
                         </div>
                         @include('admin.partials.categories.ul', ['category' => $category->children])
                     @endforeach
-                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#category">
-                        Добавить
-                        категорию
-                    </button>
                 </div>
             </div>
         </div>

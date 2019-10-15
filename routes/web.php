@@ -22,7 +22,8 @@ Route::prefix('/')->namespace('Frontend')->group(function () {
 
     Route::prefix('products')->group(function () {
         Route::get('/{category}', 'ProductController@show')->name('product');
-        Route::get('/show/{product}', 'ProductController@card')->name('product.card');
+        Route::get('/options/{product}', 'ProductController@options')->name('product.options');
+        Route::any('/cart/{product}', 'ProductController@cart')->name('product.cart');
     });
 });
 

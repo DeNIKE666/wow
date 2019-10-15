@@ -12,11 +12,10 @@
                             <span>Shop</span>
                             <span>Business</span>
                         </div>
-
                         <div class="b-pageshopcopy-card-box">
-                            @foreach ($category->products as $product)
+                            @foreach ($category->products()->orderBy('id' , 'desc')->get() as $product)
                                 <div class="shop-card">
-                                    <a href="#">
+                                    <a href="{{ route('product.options', $product) }}">
                                         <div class="shop-card-head">
                                             {!! replaceDiv($product->title) !!}
                                         </div>

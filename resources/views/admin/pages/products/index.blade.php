@@ -3,6 +3,7 @@
 @section('title' , 'Все продукты')
 
 @section('content')
+
     <div class="card">
         <div class="card-header">
             <h4>Все продукты | <button class="btn btn-primary" data-toggle="modal" data-target="#product">Добавить товар </button></h4>
@@ -20,15 +21,15 @@
                     </thead>
                     <tbody>
 
-                    @forelse ($products as $product)
+                    @forelse ($products as $productItem)
                         <tr>
-                            <td>{{ $product->title }}</td>
-                            <td>{{ $product->category->name }}</td>
-                            <td>{{ $product->price }}</td>
+                            <td>{{ $productItem->title }}</td>
+                            <td>{{ $productItem->category->name }}</td>
+                            <td>{{ $productItem->price }}</td>
                             <td class="text-center">
                                 <div class="d-inline-flex">
-                                    <a href="{{ route('admin.product.edit', $product) }}" class="btn"><i class="fad fa-edit"></i></a>
-                                    <a href="{{ route('admin.product.delete', $product) }}" class="btn"><i class="fad fa-trash"></i></a>
+                                    <a href="{{ route('admin.product.edit', $productItem) }}" class="btn"><i class="fad fa-edit"></i></a>
+                                    <a href="{{ route('admin.product.delete', $productItem) }}" class="btn"><i class="fad fa-trash"></i></a>
                                 </div>
                             </td>
                         </tr>
