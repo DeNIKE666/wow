@@ -22,6 +22,7 @@ Route::prefix('/')->namespace('Frontend')->group(function () {
 
     Route::prefix('products')->group(function () {
         Route::get('/{category}', 'ProductController@show')->name('product');
+        Route::get('/show/{product}', 'ProductController@card')->name('product.card');
     });
 });
 
@@ -40,6 +41,9 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
 
     Route::prefix('products')->group(function () {
         Route::get('/' , 'ProductsController@index')->name('admin.products');
+        Route::post('/create' , 'ProductsController@create')->name('admin.products.create');
         Route::get('/edit/{product}' , 'ProductsController@edit')->name('admin.product.edit');
+        Route::post('/update/{product}' , 'ProductsController@update')->name('admin.product.update');
+        Route::get('/delete/{product}' , 'ProductsController@delete')->name('admin.product.delete');
     });
 });
