@@ -19,6 +19,10 @@ Route::prefix('/')->namespace('Frontend')->group(function () {
     Route::prefix('categories')->group(function () {
         Route::get('/subcategory/{category}', 'CategoryController@show')->name('subcategory');
     });
+
+    Route::prefix('products')->group(function () {
+        Route::get('/{category}', 'ProductController@show')->name('product');
+    });
 });
 
 Route::prefix('admin')->namespace('Admin')->group(function () {
@@ -32,5 +36,10 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
         Route::get('/edit/{category}', 'CategoryController@edit')->name('category.edit');
         Route::post('/update/{category}', 'CategoryController@update')->name('category.update');
         Route::get('/delete/{category}', 'CategoryController@delete')->name('category.delete');
+    });
+
+    Route::prefix('products')->group(function () {
+        Route::get('/' , 'ProductsController@index')->name('admin.products');
+        Route::get('/edit/{product}' , 'ProductsController@edit')->name('admin.product.edit');
     });
 });

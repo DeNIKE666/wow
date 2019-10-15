@@ -20,9 +20,9 @@
                                 <div>
                                     <div class="pageshop-slider-item">
                                         <div class="shop-card">
-                                            <a href="#">
+                                            <a href="{{ route('product', $category) }}">
                                                 <div class="shop-card-head">
-                                                    {!!  replaceDiv($category->name) !!}
+                                                    {!! replaceDiv($category->name) !!}
                                                 </div>
                                                 <div class="shop-card-img">
                                                     <div style="background: url({{ image($category->image) }}) no-repeat center 0;"></div>

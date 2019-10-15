@@ -12,8 +12,9 @@ if (!function_exists('replaceDiv')) {
     {
         $titleString = explode(' ', $str);
 
-        return '<span>' . $titleString[0] . '</span>'
-            . "\n" . '<div>' . $titleString[1]
-            . '</div>';
+        return isset($titleString[1]) ?
+            '<span>' . $titleString[0] . '</span>' .
+            '<div>' . $titleString[1] . '</div>' :
+            '<span>' . $titleString[0] . '</span>';
     }
 }

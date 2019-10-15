@@ -33,6 +33,30 @@
                     </div>
                 </li>
 
+                <li class="nav-section">
+                    <span class="sidebar-mini-icon">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                    <h4 class="text-section">Товары</h4>
+                </li>
+
+                <li class="nav-item submenu">
+                    <a data-toggle="collapse" href="#products" class="" aria-expanded="true">
+                        <i class="fad fa-list-ul"></i>
+                        <p>Продукты</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="products" style="">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="{{ route('admin.products') }}">
+                                    <span class="sub-item">Все</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
