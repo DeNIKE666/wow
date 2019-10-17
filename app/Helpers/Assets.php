@@ -7,7 +7,7 @@
 if (!function_exists('image')) {
     function image($path)
     {
-        return asset('storage/' . $path);
+        return Storage::exists($path) ? asset('storage/' . $path) : $path;
     }
 }
 

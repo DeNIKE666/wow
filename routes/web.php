@@ -43,8 +43,10 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
     Route::prefix('products')->group(function () {
         Route::get('/' , 'ProductsController@index')->name('admin.products');
         Route::post('/create' , 'ProductsController@create')->name('admin.products.create');
+        Route::post('/import' , 'ProductsController@import')->name('admin.products.import');
         Route::get('/edit/{product}' , 'ProductsController@edit')->name('admin.product.edit');
         Route::post('/update/{product}' , 'ProductsController@update')->name('admin.product.update');
         Route::get('/delete/{product}' , 'ProductsController@delete')->name('admin.product.delete');
+        Route::get('/deletes' , 'ProductsController@deletes')->name('admin.products.delete');
     });
 });

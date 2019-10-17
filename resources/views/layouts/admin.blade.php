@@ -51,6 +51,8 @@
 <script src="{{ mix('assets/atlantis.all.js') }}"></script>
 <script src="{{ asset('assets/atlantis.min.js') }}"></script>
 
+@include('sweetalert::alert')
+
 @stack('scripts')
 
 </body>

@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->string('image')->nullable();
             $table->integer('price')->nullable();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');

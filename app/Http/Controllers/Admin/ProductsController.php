@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Imports\ProductImport;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Product;
 use App\Category;
 use Illuminate\Http\Request;
@@ -32,6 +34,18 @@ class ProductsController extends Controller
         Product::create($request->all());
 
         return redirect()->route('admin.products');
+    }
+
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+
+    public function import(Request $request)
+    {
+        Excel::import(new ProductImport($request->all()), $request->file('import'));
+
+        return redirect()->route('admin.products')->withSuccess("Импорт товаров успешно заверён");
     }
 
     /**
@@ -67,6 +81,17 @@ class ProductsController extends Controller
     public function delete(Product $product)
     {
         $product->delete();
+
+        return redirect()->route('admin.products');
+    }
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse
+     */
+
+    public function deletes()
+    {
+        Product::truncate();
 
         return redirect()->route('admin.products');
     }

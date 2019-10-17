@@ -6,7 +6,11 @@
 
     <div class="card">
         <div class="card-header">
-            <h4>Все продукты | <button class="btn btn-primary" data-toggle="modal" data-target="#product">Добавить товар </button></h4>
+            <h4>Все продукты |
+                <button class="btn btn-primary" data-toggle="modal" data-target="#product"><i class="fal fa-plus-circle"></i> Добавить товар </button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#import"><i class="fad fa-file-csv"></i> Импортировать товар </button>
+                <a href="{{ route('admin.products.delete') }}" class="btn btn-primary" ><i class="fad fa-trash"></i> Удалить все товары </a>
+            </h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -91,6 +95,40 @@
 
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Добавить</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="importModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Добавление товара</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="{{ route('admin.products.import') }}" method="POST" enctype="multipart/form-data">
+
+                        @CSRF
+
+                        <div class="form-group">
+                            <label for="import">Загрузить файл товаров</label>
+                            <input type="file" name="import" class="form-control-file" id="import">
+                        </div>
+
+                        @include('admin.partials.categories.option', ['category' => $categories])
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Импортировать</button>
                         </div>
                     </form>
 
